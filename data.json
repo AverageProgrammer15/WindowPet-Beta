@@ -1,0 +1,251 @@
+{
+    "settings": {
+        "background-value": 100,
+        "sfx-value": 100,
+        "hide_minors": true,
+        "def_ty": "def"
+    },
+    "player-data": {
+        "cash": 0,
+        "unlocks": {
+
+        },
+        "npc": {
+
+        },
+        "buffs": {
+
+        },
+        "rep_items": [],
+        "ach_got": [
+
+        ],
+        "ev_start": {}
+    },
+    "shop-data": {
+        "Upgrade": [
+            50,
+            "buff",
+            {
+                "do": "cash_gain",
+                "add": 2
+            },
+            "Get +2 cash"
+        ],
+        "Self-Enjoyment": [
+            75,
+            "npc",
+            {
+                "funct": "purpose",
+                "purpose": "happy",
+                "movefunct": "stationary",
+                "pos": [
+                    500,
+                    0
+                ],
+                "type": "null"
+            },
+            "Entertains your pet, but not to the fullest",
+            "enter_shop.jpg"
+        ],
+        "Better Stuff": [
+            500,
+            "buff",
+            {
+                "do": "cash_gain",
+                "add": 5
+            },
+            "Get +5 cash"
+        ],
+        "WindowFriend": [
+            1000,
+            "npc",
+            {
+                "movefunct": "go_random",
+                "funct": "multiplier",
+                "mult": 2,
+                "type": "minor",
+                "img": "friend.webp"
+            },
+            "Get 2x cash",
+            "friend.webp"
+        ],
+        "Even Better Stuff": [
+            1000,
+            "buff",
+            {
+                "do": "cash_gain",
+                "add": 10
+            },
+            "+25 cash"
+        ],
+        "Maid": [
+            1500,
+            "npc",
+            {
+                "movefunct": "manage_craps",
+                "funct": "None",
+                "type": "help",
+                "img": "real_maid.png"
+            },
+            "Cleans the shit.",
+            "maid.png"
+        ],
+        "Adhd Therapy": [
+            3000,
+            "buff",
+            {
+                "do": "max_hap",
+                "add": 45
+            },
+            "Increases Max Happiness by 45",
+            "therap.png"
+        ],
+        "AutoClicker": [
+            5000,
+            "activ",
+            {
+                "replace": "None",
+                "function": "get_money()",
+                "tick": 5000
+            },
+            "Want to get money even if your afk? Introducing the auto-pet, but it doesn't pet, it just gives monvey",
+            "cursor.png"
+        ],
+        "Auto Feeder": [
+            7500,
+            "activ",
+            {
+                "function": "create_food('Burger')",
+                "tick": 30000,
+                "replace": "None"
+            }
+        ],
+        "Guard": [
+            10000,
+            "npc",
+            {
+                "movefunct": "on_guard",
+                "funct": "None",
+                "type": "defend",
+                "img": "shield.jpg"
+            },
+            "Protect the thingy",
+            "shield.jpg"
+        ],
+        "F Student": [
+            50000,
+            "npc",
+            {
+                "movefunct": "go_random",
+                "funct": "multiplier",
+                "mult": 2,
+                "img": "idiot.jpg",
+                "type": "minor"
+            },
+            "+2x Cash",
+            "idiot.jpg"
+        ],
+        "Gunner": [
+            100000,
+            "npc",
+            {
+                "movefunct": "on_range",
+                "funct": "None",
+                "type": "defend",
+                "img": "gun.jpg"
+            },
+            "America \ud83d\udd25\ud83d\udd25\ud83d\udd25\ud83d\udd25\ud83d\udd25",
+            "gun.jpg"
+        ],
+        "Gunner 2": [
+            100000,
+            "npc",
+            {
+                "movefunct": "on_range",
+                "funct": "None",
+                "type": "defend",
+                "img": "gun.jpg"
+            },
+            "America \ud83d\udd25\ud83d\udd25\ud83d\udd25\ud83d\udd25\ud83d\udd25",
+            "gun.jpg"
+        ],
+        "Advertisement": [
+            150000,
+            "activ",
+            {
+                "replace": "None",
+                "function": "bring_cash(50000, 'Ad Revenue')",
+                "tick": 60000
+            },
+            "Brings ad revenue",
+            "advert.png"
+        ]
+    },
+    "achev": {
+        "First Activ": {
+            "condition": "len(get_data['player-data']['unlocks']) >= 1",
+            "desc": "Your first s\u0336l\u0336a\u0336v\u0336e\u0336 helper!",
+            "req_desc": "Buy the thing."
+        },
+        "Umbrella Warfare(but there's no umbrella just gun)": {
+            "condition": "'Gunner' in get_data['player-data']['npc']",
+            "desc": "Fire!!! ...Well, with rocks.",
+            "req_desc": "person with gun."
+        },
+        "Survived a Raid!": {
+            "desc": "I WILL SURVIVE",
+            "condition": "kill_target == kill_crnt and not kill_target == 0",
+            "req_desc": "Win against the raid where they are trying to get a feel of your pets \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588"
+        },
+        "Beast Mode \ud83d\ude08 \ud83d\ude08 ": {
+            "desc": "Wake yo ass up, cuz it's time to go beast mode \ud83d\ude08 \ud83d\ude08 \ud83d\ude08 \ud83d\ude08 ",
+            "condition": "hunger > max_hunger and happiness > max_hap"
+        },
+        "You Monster": {
+            "desc": "Rest in Peace....",
+            "condition": "hunger <= 0",
+            "req_desc": "Become an unresponsible pet owner"
+        },
+        "Hallo!": {
+            "desc": "I'm Emu Otori! Emu is meaning smil-\ud83d\udca5",
+            "condition": "True",
+            "req_desc": "play the game."
+        },
+        "Aeon of Sloth": {
+            "desc": "Bro clean up this place, it stanks",
+            "condition": "len(shits_made)> 5",
+            "req_desc": "Leave your screen filled with shit"
+        },
+        "1K": {
+            "desc": "I think u can get more than that..",
+            "condition": "cash >= 1000",
+            "req_desc": "self explanatory"
+        },
+        "10K": {
+            "desc": "Good wealth.... for a minimum wage worker",
+            "condition": "cash >= 10000",
+            "req_desc": "self explanatory"
+        },
+        "100K": {
+            "desc": "Good job on getting that much. Now try doing it in real life.",
+            "condition": "cash >= 100000",
+            "req_desc": "self explanatory"
+        },
+        "1M": {
+            "desc": "Bro get a job.",
+            "condition": "cash >= 1000000",
+            "req_desc": "self explanatory"
+        },
+        "1B": {
+            "desc": "Yo you good? You need to stop bro.",
+            "condition": "cash >= 1000000000",
+            "req_desc": "become the most unemployed person in your bloodline."
+        },
+        "Nuh Uh": {
+            "condition": "'overcap' in confirm_achlist",
+            "desc": "Sorry bro, you can't be too op",
+            "req_desc": "Attempt to go over the capped hunger"
+        }
+    }
+}

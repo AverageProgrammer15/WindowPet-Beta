@@ -1,0 +1,171 @@
+{
+        "Feeder": [
+            150,
+            "activ",
+            {
+                "replace": "None",
+                "function": "create_food('n/a')",
+                "tick": 50000
+            },
+            "Is your fatass lazy to feed your pet or just busy? \n Introducing the auto feeder",
+            "microwave.png"
+        ],
+        "AutoClicker": [
+            250,
+            "activ",
+            {
+                "replace": "None",
+                "function": "get_money()",
+                "tick": 5000
+            },
+            "Want to get money even if your afk? Introducing the auto-pet, but it doesn't pet, it just gives monvey",
+            "cursor.png"
+        ],
+        "External Drive": [
+            50,
+            "npc",
+            {
+                "movefunct": "go_random",
+                "funct": "multiplier",
+                "mult": 2,
+                "type": "minor"
+            },
+            "2x Money"
+        ],
+        "Protector": [
+            7500,
+            "npc",
+            {
+                "movefunct": "on_guard",
+                "funct": "None",
+                "type": "defend"
+            },
+            "Protect the thingy",
+            "shield.jpg"
+        ],
+        "Gunner": [
+            50000,
+            "npc",
+            {
+                "movefunct": "on_range",
+                "funct": "None",
+                "type": "defend"
+            },
+            "America \ud83d\udd25\ud83d\udd25\ud83d\udd25\ud83d\udd25\ud83d\udd25",
+            "gun.jpg"
+        ],
+        "External Drive (2x better)": [
+            500,
+            "npc",
+            {
+                "movefunct": "go_random",
+                "funct": "multiplier",
+                "mult": 5,
+                "type": "minor"
+            }
+        ],
+        "Automated Cleaner": [
+            200,
+            "npc",
+            {
+                "movefunct": "manage_craps",
+                "funct": "None",
+                "type": "help"
+            },
+            "There. Your fucking shit cleaner, happy?",
+            "clean.png"
+        ],
+        "Long-term joy": [
+            200,
+            "buff",
+            {
+                "do": "max_hap",
+                "add": 25
+            },
+            "are you not satisfied?!?!??! \nIncreases Maximum Happiness by 25"
+        ],
+        "Expanded Storage": [
+            300,
+            "buff",
+            {
+                "do": "max_hunger",
+                "add": 50
+            },
+            ""
+        ],
+        "Entertainment": [
+            450,
+            "npc",
+            {
+                "movefunct": "stationary",
+                "purpose": "happy",
+                "funct": "purpose",
+                "pos": [
+                    500,
+                    0
+                ],
+                "type": "null"
+            },
+            "'Idk man do smth while I'm away' \n -You \nWhen the pet interacts with this bad boy, it increases its happiness, but not up to 100 tho.\n(Only activates when below 10% happiness)",
+            "screen_time.jpg"
+        ],
+        "Steroids": [
+            500,
+            "buff",
+            {
+                "do": "atk_power",
+                "add": 5
+            },
+            "'I want to become stronger to defend her!' \n increases your attack power by clicking by 5",
+            "steroids.jpg"
+        ],
+        "AutoClicker 2.0": [
+            650,
+            "activ",
+            {
+                "replace": "AutoClicker",
+                "function": "get_money()",
+                "tick": 2000
+            },
+            "AutoClicker not enough for your greedy ass? Here's is 2.0",
+            "rainbow.jpg"
+        ],
+        "Feeder 2.0": [
+            700,
+            "activ",
+            {
+                "replace": "Feeder",
+                "function": "create_food('Special Spaghetti')",
+                "tick": 30000
+            },
+            "Does your pet still almost starve to death even with the feeder? \nIntroducing the better version!",
+            "better_mic.png"
+        ],
+        "More Stuff": [
+            1000,
+            "buff",
+            {
+                "do": "cash_gain",
+                "add": 30
+            }
+        ],
+        "Blessings": [
+            5000,
+            "activ",
+            {
+                "replace": "None",
+                "function": "create_event('Blessings','buff',{'tick':40000,'buffs':{'mult':3,'cash_gain':55}},0)",
+                "tick": 100000
+            },
+            "It's time to go to heaven my child. \n\nEvery once in a while, blessings will be bestowed upon you(more cash every click.)",
+            "heaven.jpg"
+        ],
+        "The Challenge.": [
+            7500,
+            "event",
+            {
+                "command": "create_event('The Call', 'attack', [King(), Bandit(),Bandit(),Bandit(),Bandit(),Bandit()], random.randint(35000, 60000))",
+                "name": "The Call"
+            }
+        ]
+    }

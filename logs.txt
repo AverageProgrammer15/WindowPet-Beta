@@ -1,0 +1,46 @@
+Just for documentation and shi' 
+Ignore if you either just wanna find smth to edit ur data or have an attention span of a goldfish.
+
+Logs:
+September 1, 2025
+
+    I actually made this logs.txt quite late cuz I only thought of making a log just now. I started making this since August 15, 2025.
+
+    Anyways I made a lot of progress on the thing. I originally wanted this to be a simple vpet-like game but the project ended up being like those Raise a Floppa type game. Those type of games are kinda dead, but for some ass reason I still wanna continue it. Anyways, as of writing this, I am now implementing the King boss. And then after that I plan to add materials cuz I'm planning to add a crafting table where you craft stuff to unlock certain stuff. 
+
+    Bugs? Uhh the pet has a seizure when running from the enemies, the protectors refuse to follow the attack-type when I change it. There is a lag spike whenever the King uses the rain attack. I know there's more but idk them.
+
+    Alright that's it for me today, cya
+
+September 2, 2025
+
+    Not much progress here since I had to study for FUCKING Filipino.
+    Finally added the event starter tho, so that's nice.
+
+    Once I finish implementing the feeder, since it's left as a placeholder, then I'll release a beta for the game on my github (As if people will play this lollollol).
+
+    I'll try to make some good progress tommorow. I do have assessments to study for, but I'll try to work on this during break times in school
+
+    Anyways, that's all for now. Sorry if it's short asf cuz of busy stuff
+
+    And as always, to whoever is reading this, have a good day.
+
+    p.s. looking at my code now, this shi is a bit ass, might change this if I have the motivation.
+
+September 3, 2025:
+    
+    Ehhh not that much was made as well today, but I was able to do the thing I would do before releasing this.
+
+    Firstly, I finally fixed the feeding section, now u need to pay to feed the pet.
+
+    Secondly, I also added more variety of songs. Majority of them come from those Roblox games I play. Also when the song changes, it gives a lil popup notification for you. Took me a while to fix the song label to display the right song, but atleast it's not as bad as the other bugs. I might make it a bit better in the future, like displaying "Luck from Item Asylum" instead of just the .mp3 file and smth like that.
+
+    Anyways, just a few more tweaks then I'll upload this alr. I'll just adjust the prices and then just push this in my github.
+
+    Alr, cya.
+
+September 4, 2025:
+
+    I'm almost done with this, almost ready for demo. I just have to adjust the prices of the items. Cuz some items are way too easy to get.
+
+    Not that much today, so yeah cya.
