@@ -1,0 +1,18 @@
+Requirements
+
+Modules:
+
+    PyQt5
+    pathlib
+
+    How to download:
+
+        pip3 install [moudle name]
+        or
+        pip install [moudle name]
+    
+    if issues still continue, please search up online for guides on how to fix this issue.
+
+Other Requirements:
+    26.9 MB
+    Python 3.13
